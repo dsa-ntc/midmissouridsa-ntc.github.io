@@ -1,15 +1,11 @@
 ---
 layout: page
-title: "Get Involved"
+title: "So You're Interested In Mid-Mo DSA"
 permalink: /get-involved/
 ---
 
-<h2>Join DSA!</h2>
+![Banner of Roses](/assets/images/get-involved-roses.png)
 
-The [Democratic Socialists of America](https://www.dsausa.org/) is the largest socialist organization in the United States because we’re a member-driven mass organization. We are a political and activist organization, not a party. We believe that working people should run both the economy and civil society, and we show our commitment to this principle by being an organization of, by, and for the working class.
+This form gathers a little contact information and gauges interest in Mid-Mo DSA’s working groups and other chapter activities. To actually join DSA follow this link: [dsausa.org/join](https://www.dsausa.org/join) (consider joining as a monthly member, which triggers dues-sharing with local chapters). All dues-paying DSA members in mid-Missouri are automatically members of Mid-Mo DSA.
 
-[Join DSA](https://www.dsausa.org/join) today!
-
-<h2>Events</h2>
-
-Check out our complete [event calendar](../calendar) for all confirmed virtual and in-person events.
+TODO: Add the form somehow

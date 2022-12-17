@@ -25,7 +25,7 @@ github: &github
 email: &email
   label: "Email"
   icon: "fa fa-envelope"
-  url: "mailto:dsachapter@gmail.com"
+  url: "mailto:midmodsa@gmail.com"
 
 # We use the above links in different combinations in 
 # different places in the site. Making lists in the manner

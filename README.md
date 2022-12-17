@@ -1,3 +1,9 @@
+TODOs:
+
+* Get social media account information
+* Ask if they have any chapter specific logos or images
+* How do replicate/replace the form on their Get Involved page
+
 ![En example of a site running using this repo](readme-assets/thumbnail.png)
 
 # DSA Chapter In a Box Website Runbook
