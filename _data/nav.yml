@@ -2,6 +2,39 @@
 header:
   - title: "Our Work"
     url: "/our-work/"
+    description: "Links to Mid-Missouri DSA's Work"
+    subpages:
+      - title: Young Democratic Socialists
+        url: /ydsa/
+        subpages:
+          - title: Mizzou YDSA
+            url: /ydsa/
+          - title: Starting A YDSA Chapter
+            url: /starting-a-ydsa-chapter/
+          - title: Joining YDSA
+            url: /joining-mizzou-ydsa/
+      - title: Working Groups
+        url: /working-groups/
+        subpages:
+          - title: Political Education
+            url: /political-education/
+          - title: Labor
+            url: /labor/
+          - title: Recruitement
+            url: /recruitment-and-retention/
+      - title: Campaigns
+        url: /campaigns/
+        subpages:
+          - title: Community Strike Solidarity Fund
+            url: /community-strike-solidarity-fund/
+          - title: American Rescue Plan
+            url: /american-rescue-plan/
+          - title: Organizing Restaurant Workers
+            url: /organizing-restaurant-workers/
+          - title: People's Book Club
+            url: /peoples-book-club/
+          - title: Neighborhood Pledge
+            url: /neighborhood-pledge/
   - title: "Statements"
     url: "/blog/"
     description: "Link to Mid-Missouri DSA's Chapter Statements"
