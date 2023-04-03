@@ -14,6 +14,16 @@
     <ul class="dropdown-menu">
         {% for page in include.subpages %}
         <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
+        {% if page.subpages %}
+        <ul>
+            {% for subpage in page.subpages %}
+            <li">
+            <a class="dropdown-item" href="{{ subpage.url }}" {% if subpage.description %} title="{{ subpage.description }}" {%
+                endif %}>{{ subpage.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
         {% endfor %}
     </ul>
     </div>
