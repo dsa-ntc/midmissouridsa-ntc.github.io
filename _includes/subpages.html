@@ -1,0 +1,20 @@
+<li class="nav-item dropdown">
+    <div class="btn-group">
+    {%- if include.url -%}
+    <a href="{{ include.url }}" class="nav-link">{{ include.title }}</a>
+    <a href="#" role="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+    </a>
+    {%- else -%}
+    <a class="nav-link dropdown-toggle" href="#" role="button" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{ include.title }}
+    </a>
+    {%- endif -%}
+    <ul class="dropdown-menu">
+        {% for page in include.subpages %}
+        <li><a class="dropdown-item" href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+    </ul>
+    </div>
+</li>
