@@ -1,40 +1,5 @@
 # header links
 header:
-  - title: "Our Work"
-    url: "/our-work/"
-    description: "Links to Mid-Missouri DSA's Work"
-    subpages:
-      - title: Young Democratic Socialists
-        url: /ydsa/
-        subpages:
-          - title: Mizzou YDSA
-            url: /ydsa/
-          - title: Starting A YDSA Chapter
-            url: /starting-a-ydsa-chapter/
-          - title: Joining YDSA
-            url: /joining-mizzou-ydsa/
-      - title: Working Groups
-        url: /working-groups/
-        subpages:
-          - title: Political Education
-            url: /political-education/
-          - title: Labor
-            url: /labor/
-          - title: Recruitement
-            url: /recruitment-and-retention/
-      - title: Campaigns
-        url: /campaigns/
-        subpages:
-          - title: Community Strike Solidarity Fund
-            url: /community-strike-solidarity-fund/
-          - title: American Rescue Plan
-            url: /american-rescue-plan/
-          - title: Organizing Restaurant Workers
-            url: /organizing-restaurant-workers/
-          - title: People's Book Club
-            url: /peoples-book-club/
-          - title: Neighborhood Pledge
-            url: /neighborhood-pledge/
   - title: "Statements"
     url: "/blog/"
     description: "Link to Mid-Missouri DSA's Chapter Statements"
@@ -48,6 +13,49 @@ header:
     url: "/supporting-mid-missouri-dsa/"
     description: "Support Mid-Missouri DSA"
 
+# Links for chapter work pages in header
+ydsa: &ydsa
+  title: Young Democratic Socialists
+  url: /ydsa/
+  pages:
+    - title: Mizzou YDSA
+      url: /ydsa/
+    - title: Starting a YDSA Chapter
+      url: /starting-a-ydsa-chapter/
+    - title: Joining YDSA
+      url: /joining-mizzou-ydsa/
+
+working-groups: &working-groups
+  title: Working Groups
+  url: /working-groups
+  pages:
+    - title: Political Education
+      url: /political-education/
+    - title: Labor
+      url: /labor/
+    - title: Recruitement
+      url: /recruitment-and-retention/
+
+campaigns: &campaigns
+  title: Campaigns
+  url: /campaigns/
+  pages:
+    - title: Community Strike Solidarity Fund
+      url: /community-strike-solidarity-fund/
+    - title: American Rescue Plan
+      url: /american-rescue-plan/
+    - title: Organizing Restaurant Workers
+      url: /organizing-restaurant-workers/
+    - title: People's Book Club
+      url: /peoples-book-club/
+    - title: Neighborhood Pledge
+      url: /neighborhood-pledge/
+
+our-work:
+  - *ydsa
+  - *working-groups
+  - *campaigns
+
 # footer links
 footer:
   # Social media links are in `social.yml` so they aren't duplicated
@@ -58,34 +66,3 @@ footer:
     - label: "RSS"
       icon: "fas fa-fw fa-rss-square"
       url: "/feed.xml"
-
-# Links for the Our Work page
-our-work:
-  - title: Young Democratic Socialists
-    pages:
-      - title: Mizzou YDSA
-        url: /ydsa/
-      - title: Starting a YDSA Chapter
-        url: /starting-a-ydsa-chapter/
-      - title: Joining YDSA
-        url: /joining-mizzou-ydsa/
-  - title: Working Groups
-    pages:
-      - title: Political Education
-        url: /political-education/
-      - title: Labor
-        url: /labor/
-      - title: Recruitement
-        url: /recruitment-and-retention/
-  - title: Campaigns
-    pages:
-      - title: Community Strike Solidarity Fund
-        url: /community-strike-solidarity-fund/
-      - title: American Rescue Plan
-        url: /american-rescue-plan/
-      - title: Organizing Restaurant Workers
-        url: /organizing-restaurant-workers/
-      - title: People's Book Club
-        url: /peoples-book-club/
-      - title: Neighborhood Pledge
-        url: /neighborhood-pledge/

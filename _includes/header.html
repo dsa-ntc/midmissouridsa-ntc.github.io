@@ -30,6 +30,26 @@
     </div>
   </nav>
 </header>
+
+<header>
+  <div class="text-center">
+    {% for item in site.data.nav.our-work %}
+    <div class="btn-group">
+      <a class="btn btn-link" href="{{ item.url }}">{{ item.title }}</a>
+      <button type="button" class="btn btn-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        {% for entry in item.pages %}
+        <a class="dropdown-item" href="{{ entry.url }}">{{ entry.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</header>
+
 <header>
   <div class="text-center">
     <img src="/assets/images/cropped-Benton_hands.jpg" class="img-fluid" alt="&quot;America Today&quot; by Thomas Hart Benton"/>

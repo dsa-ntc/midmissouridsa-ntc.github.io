@@ -1,8 +1,10 @@
 TODOs:
 
-* Get social media account information
-* Ask if they have any chapter specific logos or images
 * How do replicate/replace the form on their Get Involved page
+
+Guidance:
+
+* Adding to the Our Work section requires editing `_data/nav.yml`
 
 ![En example of a site running using this repo](readme-assets/thumbnail.png)
 
