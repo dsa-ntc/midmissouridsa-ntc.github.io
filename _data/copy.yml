@@ -1,5 +1,8 @@
 global:
+  # The text that will be displayed at the bottom of every page.
   about: "We organize for economic democracy in Columbia, Jefferson City, and central Missouri. Join us today."
+  # The title on the landing page.
   welcome: "Democratic Socialism In The Heart Of Missouri"
   welcome-image: ""
+  # The text that will be displayed in the middle of the landing page.
   landing-page-text: "TODO: Update this to the content you want"
