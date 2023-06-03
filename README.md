@@ -108,11 +108,17 @@ To change the site title, change the `title:` entry in the `_config.yml` file. T
 
 ## Changing the Site Icon
 
+### Header and Footer Icons
+
 The logo shown at the top left of every page and at the bottom center of every page can be changed by changing the file specified in the `logo:` option in the `_config.yml` file found in the base directory of your repository.
 
 You will have to upload the image file first. Navigate to the `assest/images/` folder on GitHub, click the "Add file" dropdown menu, and select "Upload files":
 
 !["Upload files" button](/readme-assets/chapter_readme/upload-files.png)
+
+### Tab Icon
+
+Every tab uses the `favicon.ico` file in `/assets/images/favicons/` for the icon in the browser tab. To switch the icon to a different picture, follow the steps in this blog post: <https://ptc-it.de/add-favicon-to-mm-jekyll-site/>. If this post is not helpful enough, please reach out to the NTC and we will be happy to assist and improve on the documentation here.
 
 ## Adding a New Non-Post Page
 
