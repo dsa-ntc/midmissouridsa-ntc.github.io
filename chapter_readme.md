@@ -156,6 +156,12 @@ You can comment or uncomment the lines in the file (put a '#' at the beginning o
 
 If there is a social media account that you have that we don't have in the file, let the NTC know so we can add it to the template.
 
+## Changing the Blog Author Name
+
+At the moment, our the chapter website template only supports a single author for all posts. The name of this author can be changed in the `_data/blog.yml` file.
+
+If this is a problem for you, please let the NTC know so we can prioritize work appropriately.
+
 ## Useful Reference Links
 
 * Github documentation on creating, editing, moving, and deleting files: <https://docs.github.com/en/repositories/working-with-files/managing-files>
