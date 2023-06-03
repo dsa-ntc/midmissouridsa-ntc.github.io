@@ -1,10 +1,14 @@
 # README for Chapters
 
-This document intends to give instructions on how to do anything you want to do with your site. All these instructions assume you have the Github repository open in a browser tab: [your chapter's repository](https://github.com/dsa-ntc/midmissouridsa-ntc.github.io).
+This document serves to both tell you about your new site and give you instructions on how to do anything you want to do with your site. All these instructions assume you have the Github repository open in a browser tab: [your chapter's repository](https://github.com/dsa-ntc/midmissouridsa-ntc.github.io).
 
-If instructions are missing for something you want to do, please reach out to the NTC for help.
+If instructions are missing for something you want to do or if you have a question that this page doesn't answer, please reach out to the NTC for help. Doing so will allow us to add more information to this page, so other chapters can benefit.
 
-## Helpful resources
+## Site Features
+
+### RSS Feed
+
+In the footer at the bottom of every page there is a link to the site's RSS feed. This is updated automatically when you make a new blog post. Readers can subscribe to the RSS feed using an RSS reader, and be notified when you make a new post.
 
 ## Adding a New Post
 
@@ -104,6 +108,12 @@ To change the site title, change the `title:` entry in the `_config.yml` file. T
 
 ## Changing the Site Icon
 
+The logo shown at the top left of every page and at the bottom center of every page can be changed by changing the file specified in the `logo:` option in the `_config.yml` file found in the base directory of your repository.
+
+You will have to upload the image file first. Navigate to the `assest/images/` folder on GitHub, click the "Add file" dropdown menu, and select "Upload files":
+
+!["Upload files" button](/readme-assets/chapter_readme/upload-files.png)
+
 ## Adding a New Non-Post Page
 
 To add a new non-post page to the site, navigate to the `_pages` folder.
@@ -130,13 +140,25 @@ You can also add the page to the navigation bar that appears at the top of every
 
 ## Adding Pictures to Pages and Posts
 
-Pictures can be 
+Pictures can be inserted into posts an non-post pages. The syntax for adding pictures to markdown files can be found [here](https://www.markdownguide.org/basic-syntax#images-1). Additionally, you can look at the raw markdown for this page to see several examples. The one convention Jekyll follows is that you put the images in the `assets/images/` folder.
+
+Adding images to the repository is done similarly to how you create a new post. Navigate to the `assest/images/` folder on GitHub, click the "Add file" dropdown menu, and select "Upload files":
+
+!["Upload files" button](/readme-assets/chapter_readme/upload-files.png)
 
 ## Specifying Social Media Accounts
 
+`_data/social.yml` contains the social media accounts you want shown on your page. The top half of the page is where you provide the information for the social media accounts you have. The bottom half states which social media accounts are shown on various parts of pages.
+
+![Social Media Accounts](/readme-assets/chapter_readme/social-media.png)
+
+You can comment or uncomment the lines in the file (put a '#' at the beginning of the line to comment out (it won't be read by the site generator) the line) to control whether the social media account is shown on the various parts of your site.
+
+If there is a social media account that you have that we don't have in the file, let the NTC know so we can add it to the template.
+
 ## Useful Reference Links
 
-* Github documentation on creating, editing, moving, and deleting files: https://docs.github.com/en/repositories/working-with-files/managing-files
-* Jekyll documentation on posts: https://jekyllrb.com/docs/posts/
-* Jekyll documentation on front matter: https://jekyllrb.com/docs/front-matter/
-* Markdown documentation: https://www.markdownguide.org/basic-syntax/
+* Github documentation on creating, editing, moving, and deleting files: <https://docs.github.com/en/repositories/working-with-files/managing-files>
+* Jekyll documentation on posts: <https://jekyllrb.com/docs/posts/>
+* Jekyll documentation on front matter: <https://jekyllrb.com/docs/front-matter/>
+* Markdown documentation: <https://www.markdownguide.org/basic-syntax/>

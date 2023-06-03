@@ -1,3 +1,5 @@
+# These are the definitions for social media accounts you chapter may have.
+
 facebook: &facebook
   label: "Facebook"
   icon: "fab fa-fw fa-facebook"
@@ -15,6 +17,20 @@ email: &email
   icon: "fa fa-envelope"
   url: "mailto:midmodsa@gmail.com"
 
+# Uncomment these items if you have these accounts
+
+# instagram: &instagram
+#   label: "Instagram"
+#   icon: "fab fa-fw fa-instagram"
+#   url: "https://www.instagram.com/dsachapter/"
+#   username: dsachapter
+# 
+# github: &github
+#   label: "GitHub"
+#   icon: "fab fa-fw fa-github"
+#   url: "https://github.com/dsachapter"
+#   username: dsachapter
+
 # We use the above links in different combinations in 
 # different places in the site. Making lists in the manner
 # below allows us to define the above strings once.
@@ -24,13 +40,17 @@ footer:
   - *facebook
   - *twitter
   - *email
+#  - *instagram
+#  - *github
 
 # This list appears in the dropdown of every blog post
 follow:
   - *facebook
   - *twitter
+#  - *instagram
 
 # I don't see where this gets used yet
 share:
   - *facebook
   - *twitter
+#  - *instagram
