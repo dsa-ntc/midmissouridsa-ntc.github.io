@@ -1,123 +1,170 @@
-TODOs:
+# README for Chapters
 
-* How do replicate/replace the form on their Get Involved page
+This document serves to both tell you about your new site and give you instructions on how to do anything you want to do with your site. All these instructions assume you have the Github repository open in a browser tab: [your chapter's repository](https://github.com/dsa-ntc/midmissouridsa-ntc.github.io).
 
-Guidance:
+If instructions are missing for something you want to do or if you have a question that this page doesn't answer, please reach out to the NTC for help. Doing so will allow us to add more information to this page, so other chapters can benefit.
 
-* Adding to the Our Work section requires editing `_data/nav.yml`
+## Site Features
 
-![En example of a site running using this repo](readme-assets/thumbnail.png)
+### RSS Feed
 
-# DSA Chapter In a Box Website Runbook
+In the footer at the bottom of every page there is a link to the site's RSS feed. This is updated automatically when you make a new blog post. Readers can subscribe to the RSS feed using an RSS reader, and be notified when you make a new post.
 
-Smaller Chapters and Organizing Committees of the [Democratic Socialists of America](https://www.dsausa.org/) (refered herein as "Chapters" for shorthand), or Chapters without a dedicated internal Tech committee, may lack a web presence outside of Corporate owned Social Media. To assist with this, the [National Tech Committee (NTC)](https://tech.dsausa.org/) has created this runbook to help quickly get Chapter webpages up and running with DSA branding.
+## Adding a New Post
 
-An example webpage can be viewed at [peninsula.dsachapters.org](https://peninsula.dsachapters.org/) ([source code](https://github.com/peninsuladsa-ntc/peninsuladsa-ntc.github.io)). The tools used to create it consist of:
+Go to the `_posts` directory.
 
-- [Jekyll](https://jekyllrb.com/), a static site generator
-    - For documentation please visit [jekyllrb.com/docs](https://jekyllrb.com/docs).
-- A theme based on the [Lone Wolf](https://github.com/manid2/lone-wolf-theme) Jekyll theme for a consistent visual style
-    - See [an example page here](https://manid2.github.io/lone-wolf-theme/).
-- The [Markdown formatting language](https://daringfireball.net/projects/markdown/basics) for adding and updating content
-- [GitHub Pages](https://docs.github.com/en/pages) for hosting the site
-    - You can learn more about GitHub Pages at [pages.github.com](https://pages.github.com/) and you will find a detailed walkthrough in [GitHub Docs](https://docs.github.com/en/pages).
+![Highlighting the _posts directory](/readme-assets/chapter_readme/posts-click.png)
 
-You can also opt-in to self-host your site if your Chapter has a webserver, this is however out of scope of this document.
+Click the "Add file" dropdown and then click the "Create new file" option.
 
-## Expectations and Limitations
+![Create new file option](/readme-assets/chapter_readme/new-post.png)
 
-This project's function is for the NTC to provide the means for smaller DSA Chapters to establish a Jekyll based website quickly and at no cost. The ownership (e.g. updates to content, updates to theme, customization) is expected to fall on the individual Chapter with minimal support from the NTC outside of onboarding. There is no requirement the website must be hosted on GitHub Pages, use this Jekyll theme, or use this project.
+Add the front matter at the top of the file and the post content at the bottom. Jekyll has a documentation page on both [front matter](https://jekyllrb.com/docs/front-matter/) and [posts](https://jekyllrb.com/docs/posts/). You can also look at your previous posts for what should be included in the front matter and how to include links and pictures.
 
-Jekyll, the base code for this website and this project, is a static website generator, meaning some "dynamic" functionality like a comments section, dynamic chapter calendars for tracking events, or some embedded media, are not supported. The [Jekyll documentation](https://jekyllrb.com/docs) can help further explain what will and won't work if implemented on your website. See [this helpful comparison between static and dynamic webpages](https://about.gitlab.com/blog/2016/06/03/ssg-overview-gitlab-pages-part-1-dynamic-x-static/) that further explains the difference.
+![Post front matter and content](/readme-assets/chapter_readme/post-sections.png)
 
-## Installation
+Name your post following the convention of your other posts: `YEAR-MONTH-DAY-name-of-your-post.md` and click the "Commit changes..." button.
 
-You will need a GitHub account and a GitHub organization for your Chapter. While GitHub Pages can be created both on personal and group accounts, it's recommended to make this a Chapter based account to provide additional access if needed.
+![Post name and commit button](/readme-assets/chapter_readme/post-name-and-commit.png)
 
-1. [Create a new organization](https://github.com/organizations/plan) on GitHub. Select the "Create a free organization" option.
+On the "Commit changes" screen, you can change the "Commit message" and "Extended description" if you'd like (or leave it as is). Hit the "Commit changes" button at the bottom, and the post will be published to your site in the next 10 minutes.
 
-![Screenshot of GitHub's "Pick a plan" page when creating a new organization](readme-assets/create-organization.png)
+### Draft Posts
 
-2. Fill out the basic information. Feel free to add organization members now or at a later point. As you proceed past the optional survey, you will be redirected to your organization's page at `https://github.com/organization-name`.
+If you want to save a post as a draft before publishing it to your site, you can save the post in the `_posts/_drafts/` directory. To do this, you add `_drafts/` to the beginning of the filename in "Name your file..." box when editing the file. This will add the `_drafts` directory to the file path.
 
-![Screenshot of the organization setup page](readme-assets/create-organization-details.png)
+#### Moving a Post into the Drafts Directory
 
-3. Click the "Create new repository" button in the right-hand sidebar, under "Repositories". Name your repository `organization-name.github.io`. All letters in the repository name will need to be lowercase.
+Here is what the filename will look like when the post is in the `_posts` directory:
 
-![Organization page after it's first created, with the button labeled "Create new repository" highlighted](readme-assets/create-new-repo.png)
+![Post in `_posts` directory](/readme-assets/chapter_readme/post-move-to-drafts-1.png)
 
-4. You will need to make your repostory public in order for GitHub page to work, unless you're using a paid plan. You can leave the rest of the options as they are and click the "Create repository" button at the bottom of the page.
+With your cursor at the beginning of the post name, type "_drafts":
 
-![Screenshot of the repo configuration page before the repo is created](readme-assets/create-new-repo-details.png)
+![Post almost in `_drafts` directory](/readme-assets/chapter_readme/post-move-to-drafts-2.png)
 
-5. Use the "Import code" button to copy the starter website.
+Type "/" and the post will be moved into the `_drafts/` directory:
 
-![A view of a new repo page after the repo is created, with the "Import code" button highlighted](readme-assets/import-starter-site.png)
+![Post now in `_drafts` directory](/readme-assets/chapter_readme/post-move-to-drafts-3.png)
 
-6. Use `https://github.com/dsa-chapter-website/dsa-chapter-website.github.io` as "Your old repository's clone URL" and click "Begin import".
+Finally, press the "Commit changes..." button on the right to save the movement of the file.
 
-![The next step in the code import process, with an input field prompting for the imported repo URL and a "Begin import" button both highlighted](readme-assets/import-starter-site-begin-import.png)
+#### Publishing a Draft Post
 
-7. Once the import is finished, click your repository link. You will see a link to your new site next to the repository's name on top of the page. Your site's URL will have the format of `https://organization-name.github.io/`.
+When you are ready to publish a post in your `_drafts` directory, you do almost the reverse of above, you will edit the post and remove `_drafts/` from the filename.
 
-![Screenshot of the imported starter website repo](readme-assets/site-preview.png)
+Here is what the filename will look like when the post is in the `_drafts` directory:
 
-## Customizing Your Website
+![Post in `_drafts` directory](/readme-assets/chapter_readme/post-move-to-drafts-3.png)
 
-A handful of files need to be updated to better customize your Chapter's webpage. This can be done directly [through GitHub's interface](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
+With your cursor at the beginning of the post name, hit the "Backspace" key. This will move the "_drafts" layer of the filepath into the file name box:
 
-- `_config.yml` Basic information about your Chapter's website. You can start with these:
-    - `title`
-    - `url`
-- There are more settings in `_config.yml` that will improve the Search Engine Optimization tags Jekyll generates for your pages, but it's okay to leave blank the ones you don't understand.
-- `_data/copy.yaml` Update this file with the name and description of your Chapter.
-- `_data/blog.yml` Basic information about the blog authors, in most cases this is the name and social media links of the Chapter.
-- `_data/nav.yml` This file contains both the header and footer bars on the webpage, and will be added to every post or page made in the above section. Example values are provided from DSA National.  
+![Post in `_posts` directory with "_drafts" in file name box](/readme-assets/chapter_readme/post-move-to-drafts-2.png)
 
-See [the Peninsula DSA's GitHub repo](https://github.com/peninsuladsa-ntc/peninsuladsa-ntc.github.io) for an example website.
+Delete the "_drafts" at the beginning of the file name to restore the original post name:
 
-## Adding and Editing Content
+![Post now in `_posts` directory](/readme-assets/chapter_readme/post-move-to-drafts-1.png)
 
-All pages for this new website are contained in the `_pages` directory. There are several pages created as examples, here are the main ones:
-- `404.md` -- Example 404 page which Jekyll will direct any page to if it doesn't otherwise exist, you can customize this further to your Chapter's content.
-- `about.md` -- A quick about summary of your Chapter, why the Chapter was formed, how it ties in to the history of your area.
-`blog.md` -- Placeholder for a Chapter blog or statements page (which can be renamed and updated as per your Chapter's preference). An example of a blog post / Chapter - statement (contained in `_posts/2021-09-20-ice-statement.md`) is provided to further illustrate how this page can be used to automatically group statements/blogs
-- `calendar.md` -- A page where you can embed or provide a calendar around events and actions your Chapter is participating in
-- `get-involved.md` -- A page where you can provide additional instructions for potential memebers to join your Chapter.
+Finally, press the "Commit changes..." button on the right to save the movement of the file.
 
-To learn more about adding content to your site, please [review the GitHub documentation](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll).
+## Editing an Existing Page
 
-After you commit your changes, you can check your site's Actions page at `https://github.com/organization-name/organization-name.github.io/actions` to see the deployment process status.
+Navigate to any page in the repository that you wish to edit and click the "Edit this file" button.
 
-## Domain Name
+![Edit this file button](/readme-assets/chapter_readme/edit-this-file-button.png)
 
-TBD, needs to be agreed on but proposed to use chapter.dsausa.org as the backbone for these websites. GitHub supports [custom domain names](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+Make whatever changes you desire and clicke the "commit changes..." button.
 
-## For Developers
+![Post name and commit button](/readme-assets/chapter_readme/post-name-and-commit.png)
 
-See [the Jekyll documentation](https://jekyllrb.com/docs/) on how to set up a Jekyll site for local development.
+On the "Commit changes" screen, you can change the "Commit message" and "Extended description" if you'd like (or leave it as is). Hit the "Commit changes" button at the bottom, and the post will be published to your site in the next 10 minutes.
 
-Once Jekyll is installed, you can run the site locally with:
+## Editing Landing Page Content
 
-```sh
-bundle exec jekyll serve --livereload
-```
+The file `_data/copy.yml` contains some of the text that shows up on your landing page, and some that shows up on every page. The `welcome` and `landing-page-text` show up on the landing page. The `about` is displayed in the footer of every page. Below are screenshots of the file itself and where the text appears on the landing page.
 
-If the site is not automatically updating after content is changed, try:
+![The `_data/copy.yml` file](/readme-assets/chapter_readme/copy-file.png)
 
-```sh
-bundle exec jekyll serve --livereload --force-polling
-```
+![The landing page with copy highlighted](/readme-assets/chapter_readme/copy-page-screenshot.png)
 
-### Updating the Theme
+Edit this page as explained in the [Editing an Existing Page](#editing-an-existing-page) section. Your changes should be reflected on your site within 10 minutes.
 
-[See Jekyll Themes documentation](https://jekyllrb.com/docs/themes/) on working with Jekyll themes.
+## Editing the Navigation Header
 
-- `_sass/bootswatch/dist/united/_variables.scss` This controls the variables for colors and font for the webpage, currently defaults are kept and minor changes were made to align to the [DSA style guide](https://design.dsausa.org/national-identity/color-palette/)
+The file `_data/nav.yml` determines which links appear in the header of every page.
 
-## TODO
+![The nav header file](/readme-assets/chapter_readme/nav-header-file.png)
 
-- Instructions on how to maintain and update pages with GitHub Editor vs Desktop
-- Project website DNS name
-- Remove duplicated data like social media account info
-- Trim `_config.yml`
+![Screenshot of the nav bar](/readme-assets/chapter_readme/nav-header-screenshot.png)
+
+You can add or remove entries in the yml file to add or remove the links that appear in the navigation header.
+
+One word of caution, adding too many links will cause the links to collide with the site title.
+
+## Changing the Site Title
+
+To change the site title, change the `title:` entry in the `_config.yml` file. This title appears in the navigation bar header, the footer of every page, and the tab text on the landing page.
+
+## Changing the Site Icon
+
+The logo shown at the top left of every page and at the bottom center of every page can be changed by changing the file specified in the `logo:` option in the `_config.yml` file found in the base directory of your repository.
+
+You will have to upload the image file first. Navigate to the `assest/images/` folder on GitHub, click the "Add file" dropdown menu, and select "Upload files":
+
+!["Upload files" button](/readme-assets/chapter_readme/upload-files.png)
+
+## Adding a New Non-Post Page
+
+To add a new non-post page to the site, navigate to the `_pages` folder.
+
+![Base folder with `_pages` directory highlighted](/readme-assets/chapter_readme/pages-click.png)
+
+Click the "Add file" dropdown and then click the "Create new file" option.
+
+![Create new file option](/readme-assets/chapter_readme/new-page.png)
+
+Add the front matter at the top of the file and the page content at the bottom. Jekyll has a documentation page on both [front matter](https://jekyllrb.com/docs/front-matter/) and [posts](https://jekyllrb.com/docs/posts/). You can also look at other pages for what should be included in the front matter and how to include links and pictures.
+
+![Page front matter and content](/readme-assets/chapter_readme/page-sections.png)
+
+Give your page a name and click the "Commit changes..." button.
+
+On the "Commit changes" screen, you can change the "Commit message" and "Extended description" if you'd like (or leave it as is). Hit the "Commit changes" button at the bottom, and the post will be published to your site in the next 10 minutes.
+
+After the page has been created you will need some way for users to get to the page. You can use your new page's url in any of your existing pages or a post:
+
+Inserting `[New Page Title](/_pages/new-page-title/)` will create a link to your new page.
+
+You can also add the page to the navigation bar that appears at the top of every page. See [Editing the Navigation Header](#editing-the-navigation-header) for instructions.
+
+## Adding Pictures to Pages and Posts
+
+Pictures can be inserted into posts an non-post pages. The syntax for adding pictures to markdown files can be found [here](https://www.markdownguide.org/basic-syntax#images-1). Additionally, you can look at the raw markdown for this page to see several examples. The one convention Jekyll follows is that you put the images in the `assets/images/` folder.
+
+Adding images to the repository is done similarly to how you create a new post. Navigate to the `assest/images/` folder on GitHub, click the "Add file" dropdown menu, and select "Upload files":
+
+!["Upload files" button](/readme-assets/chapter_readme/upload-files.png)
+
+## Specifying Social Media Accounts
+
+`_data/social.yml` contains the social media accounts you want shown on your page. The top half of the page is where you provide the information for the social media accounts you have. The bottom half states which social media accounts are shown on various parts of pages.
+
+![Social Media Accounts](/readme-assets/chapter_readme/social-media.png)
+
+You can comment or uncomment the lines in the file (put a '#' at the beginning of the line to comment out (it won't be read by the site generator) the line) to control whether the social media account is shown on the various parts of your site.
+
+If there is a social media account that you have that we don't have in the file, let the NTC know so we can add it to the template.
+
+## Changing the Blog Author Name
+
+At the moment, our the chapter website template only supports a single author for all posts. The name of this author can be changed in the `_data/blog.yml` file.
+
+If this is a problem for you, please let the NTC know so we can prioritize work appropriately.
+
+## Useful Reference Links
+
+* Github documentation on creating, editing, moving, and deleting files: <https://docs.github.com/en/repositories/working-with-files/managing-files>
+* Jekyll documentation on posts: <https://jekyllrb.com/docs/posts/>
+* Jekyll documentation on front matter: <https://jekyllrb.com/docs/front-matter/>
+* Markdown documentation: <https://www.markdownguide.org/basic-syntax/>
