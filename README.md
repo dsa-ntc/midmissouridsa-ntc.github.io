@@ -102,6 +102,22 @@ You can add or remove entries in the yml file to add or remove the links that ap
 
 One word of caution, adding too many links will cause the links to collide with the site title.
 
+### Dropdowns
+
+If your webpage has navigation drop down menus, changes to that menu will also take place in the `_data/nav.yml` file. Here is an example of a section of a site with three dropdown menus with one of the menus expanded:
+
+![One dropdown menu expanded](/readme-assets/chapter_readme/dropdown-screenshot.png)
+
+The code in `_data/nav.yml` for these dropdowns looks like this:
+
+![Dropdown yml code](/readme-assets/chapter_readme/dropdown-yml.png)
+
+The lower highlighted section lists the three dropdown menus to use, while the upper highlighted section is how a dropdown menu is defined. Each item in the `pages:` section is an item in the dropdown menu. You can see that the titles in the yml file match the dropdown menu items in the screenshot. Each one of the items in the `pages:` section will correspond to one of the other pages you have already made for your site.
+
+There is another small detail that is vital to the dropdown working correctly. In the lower highlighted section of the yml file, you will see that the campaigns item has a `*` next to it: `- *campaigns` and, in the upper highlighted section of the yml file, the definition of the campaigns dropdown starts with `campaigns: &campaigns`. The `&campaigns` means that you can reference the following definition by the name "campaigns", while the `*campaigns` points to an item referenced by the name "campaigns". Without these symbols, the site will not build.
+
+Dropdowns are less straightforward than the rest of the site, so if you would like help, reach out to the NTC. Whenever someone asks for help, it gives us the opportunity to improve our documentation.
+
 ## Changing the Site Title
 
 To change the site title, change the `title:` entry in the `_config.yml` file. This title appears in the navigation bar header, the footer of every page, and the tab text on the landing page.
