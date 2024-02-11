@@ -40,14 +40,10 @@ campaigns: &campaigns
   title: Campaigns
   url: /campaigns/
   pages:
-    - title: Community Strike Solidarity Fund
-      url: /community-strike-solidarity-fund/
-    - title: American Rescue Plan
-      url: /american-rescue-plan/
-    - title: Organizing Restaurant Workers
-      url: /organizing-restaurant-workers/
-    - title: People's Book Club
-      url: /peoples-book-club/
+    - title: Fair Wages and Paid Sick Leave
+      url: /fair-wages-and-paid-sick-leave/
+    - title: Trans Sanctuary City
+      url: /trans-sanctuary-city/
     - title: Neighborhood Pledge
       url: /neighborhood-pledge/
 
